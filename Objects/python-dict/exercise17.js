@@ -3,6 +3,7 @@
  */
 
 // work on this
+// geekforgeeks solution
 let student_data = {
     'id1': 
    {'name': ['Sara'], 
@@ -25,3 +26,24 @@ let student_data = {
     'subject_integration': ['english, math, science']
    },
 }
+
+let arr = []
+
+for (let key in student_data) {
+  arr.push(student_data[key])
+}
+
+let newArray = []
+
+let obj = {}
+console.log(arr)
+for (let i in arr) {
+  let objTitle = arr[i]['name']
+  obj[objTitle] = arr[i]
+}
+
+for (let i in obj) {
+  newArray.push(obj[i])
+}
+
+console.log(obj)
