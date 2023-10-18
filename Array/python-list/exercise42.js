@@ -1,0 +1,10 @@
+/**
+ * Write a Python program to find missing and additional values in two lists.
+ */
+
+// my solution
+let list1 = ['a','b','c','d','e','f']
+let list2 = ['d','e','f','g','h']
+
+console.log("Missing values in second list:",list1.filter(el => !list2.includes(el)).join(","))
+console.log("Additional values in second list:",list2.filter(el => !list1.includes(el)).join(","))
