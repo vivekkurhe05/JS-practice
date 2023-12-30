@@ -26,3 +26,25 @@ function count_words(str) {
 }
 
 console.log(count_words("aaabbccccddddd"));
+
+
+// or my solution
+function count_words2(str) {
+    let obj = {}, newstr=""
+    for(let i=0; i<str.length; i++) {
+        let count = 0
+        let index = str.indexOf(str[i])
+        while(index != -1) {
+            count++
+            index = str.indexOf(str[i], index+1)
+            obj[str[i]] = count
+        }
+    }
+    for(let prop in obj) {
+        newstr+=prop+obj[prop]
+    }
+    return newstr
+    
+}
+
+console.log(count_words2("aaabbccccddddd"));
