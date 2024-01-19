@@ -11,4 +11,5 @@ function remove_all_consecutives(str) {
 
     return newstr
 }
-console.log(remove_all_consecutives("xxxxxyyyyy"))
+
+console.log(remove_all_consecutives("xxxxxyyyyyx"))

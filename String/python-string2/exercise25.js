@@ -14,11 +14,11 @@ function caesar_encrypt(str, shift_left) {
     let arr = str.trim().split("")
     let newarr = []
     for(let i=0; i<arr.length; i++) {
-        if(arr[i].charCodeAt()-3 < 97) {
+        if(arr[i].charCodeAt()-shift_left < 97) {
             arr[i]=arr[i].charCodeAt()+23
             newarr.push(arr[i])
         }
-        else newarr.push(arr[i].charCodeAt()-3)
+        else newarr.push(arr[i].charCodeAt()-shift_left)
     }
     return newarr.map(num => String.fromCharCode(num)).join("")
     
@@ -27,3 +27,4 @@ function caesar_encrypt(str, shift_left) {
 console.log(caesar_encrypt('abc', 3)) // xyz
 console.log(caesar_encrypt('xyz', 3)) // uvw
 console.log(caesar_encrypt('def', 3)) // abc
+console.log(caesar_encrypt('pqr', 3)) // mno
