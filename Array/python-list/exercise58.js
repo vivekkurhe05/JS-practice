@@ -16,3 +16,16 @@ let arr1 = [1, 3, 5, 7, 9, 10]
 let arr2 = [2, 4, 6, 8]
 
 console.log(merge(arr1, arr2))
+
+// or
+
+// my solution
+function merge2(arr1, arr2) {
+    arr1.splice(arr1.length-1,1,...arr2)
+    return arr1
+}
+
+let list1 = [1, 3, 5, 7, 9, 10]
+let list2 = [2, 4, 6, 8]
+
+console.log(merge2(list1, list2))

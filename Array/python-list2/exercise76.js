@@ -12,25 +12,25 @@ List reflecting the modified run-length encoding from the said string:
  */
 
 // chat gpt
-function count_elem(arr) {
+function encoding_runLength(list) {
+    let result = []
+    let count = 1
 
-    let encoding = []
-    let count =1
 
-    for(let i=0;i<arr.length;i++) {
-        if(arr[i] === arr[i+1]){
+    for(let i=0;i<list.length;i++) {
+        if(list[i] === list[i+1]) {
             count++
-        }else{
+        }else {
             if(count===1) {
-                encoding.push(arr[i])
+                result.push(list[i])
             }else{
-                encoding.push([count, arr[i]])
+                result.push([count, list[i]])
+                count=1
             }
-            count=1
         }
     }
-    return encoding
+    return result
 }
 
-let list1 = [1, 1, 2, 3, 4, 4, 5, 1]
-console.log(count_elem(list1))
+let list = [1, 1, 2, 3, 4, 4, 5, 1]
+console.log(encoding_runLength(list))

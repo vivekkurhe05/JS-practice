@@ -8,28 +8,10 @@ Move all zero digits to end of the said list of numbers:
  */
 
 // my solution
-let num = [3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
-for(let i=0; i<num.length; i++) {
-    if(num[i] === 0) {
-        num.splice(i,1)
-        num.push(0)
-    }
-}
-
-for(let i=0; i<num.length; i++) {
-    if(num[i] === 0) {
-        num.splice(i,1)
-        num.push(0)
-    }
-}
-
-console.log(num)
-
-// or 
-// my solution
 let list = [3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
 let zeros = []
 let non_zero = []
 non_zero = list.filter(el => el!=0)
 zeros = list.filter(el => el===0)
 console.log(non_zero.concat(zeros))
+
