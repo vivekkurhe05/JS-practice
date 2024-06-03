@@ -1,4 +1,5 @@
 /**
+ * exercise 56
  * Write a Python program to convert a string to a list.
  * let color ="['Red', 'Green', 'White']"
 console.log(convert_into_array(color))
@@ -68,4 +69,19 @@ Original encoded list:
 [[2, 1], 2, 3, [2, 4], 5, 1]
 Decode a run-length encoded said list:
 [1, 1, 2, 3, 4, 4, 5, 1]
+ */
+
+/**
+ * Write a Python program to extract a given number of randomly selected elements from a given list.
+Original list:
+[1, 1, 2, 3, 4, 4, 5, 1]
+Selected 3 random numbers of the above list:
+[4, 4, 1]
+ */
+
+/**
+ * exercise 86
+ * Write a Python program to create a 3X3 grid with numbers.
+3X3 grid with numbers:
+[[1, 2, 3], [1, 2, 3], [1, 2, 3]]
  */

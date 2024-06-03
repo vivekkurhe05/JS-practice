@@ -11,3 +11,12 @@ function convert_into_array(str) {
 
 let color ="['Red', 'Green', 'White']"
 console.log(convert_into_array(color))
+
+// or
+
+function convert_into_array2(str) {
+    return JSON.parse(str)
+}
+
+let color2 ="['Red', 'Green', 'White']"
+console.log(convert_into_array2(color2))
