@@ -10,19 +10,7 @@
  * "We are doing some JavaScript exercises."
  */
 
-
-function insert(str, substr, pos){
-    if(substr === undefined && pos === undefined) return str
-    if(pos === undefined) return substr+str
-    return str.substring(0,pos)+substr+str.substring(pos)
-}
-
-console.log(insert('We are doing some exercises.'));
-console.log(insert('We are doing some exercises.','JavaScript '));
-console.log(insert('We are doing some exercises.','JavaScript ',18));
-
-// or
-
+// my solution
 function insert(str, substr="", pos=0){
     return str.substring(0,pos) +substr+ str.substring(pos)
 }
