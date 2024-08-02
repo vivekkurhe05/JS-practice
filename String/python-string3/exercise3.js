@@ -1,23 +1,23 @@
 /**
- * Write a Python function that takes a list of words and return the longest word and
-the length of the longest one.
-Sample Output:
-Longest word: Exercises
-Length of the longest word: 9
+ *
+Write a Python program to get a string made of the first 2 and last 2 characters of a given string.
+If the string length is less than 2, return the empty string instead.
+Sample String : 'w3resource'
+Expected Result : 'w3ce'
+Sample String : 'w3'
+Expected Result : 'w3w3'
+Sample String : ' w'
+Expected Result : Empty String
  */
 
+
 // my solution
-function longest_word(arr){
-    let max = arr[0].length
-
-    arr.map(el=>{
-        max= Math.max(el.length,max)
-        return max
-    })
-
-    return arr.filter(el=>{
-        return el.length===max
-    })
+function makeString(str){
+    if(str.length < 2) return "Empty String"
+    return str.substring(0,2) + str.slice(-2)
 }
 
-console.log(longest_word(["Vivek","Raj","Simran","Exercises","Oyo"]))
+
+console.log(makeString("w3resource"))
+console.log(makeString(("w3")))
+console.log(makeString(("w")))

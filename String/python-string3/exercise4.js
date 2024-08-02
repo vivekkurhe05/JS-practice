@@ -1,33 +1,28 @@
 /**
- * Write a Python program to check whether a string contains all letters of the alphabet.
+ *
+Write a Python program to get a string from a given string where all occurrences
+of its first char have been changed to '$', except the first char itself.
+Sample String : 'restart'
+Expected Result : 'resta$t'
  */
 
-function all_alphabets(str){
-    let alpha = "abcdefghijklmnopqrstuvwxyz"
-    str = str.toLowerCase()
-    str =str.replaceAll(" ","")
-    return alpha.split("").every(char=>str.indexOf(char)!=-1)
 
+// my solution
+function changeAllOccurrencesOfFirstChar(str){
+    let re = /\Br/g
+    return str.replace(re, "$")
 }
 
-console.log(all_alphabets("The quick brown fox jumps over the lazy dog")) // true
-console.log(all_alphabets("The quick brown fox jumps over the lazy cat")) // false
+console.log(changeAllOccurrencesOfFirstChar("restart"))
 
-// or practice
 
-function all_alphabets2(str){
-    let alpha = "abcdefghijklmnopqrstuvwxyz"
-    str = str.toLowerCase()
-    str = str.replaceAll(" ","")
-    let flag = true
-    for(let i=0; i<alpha.length;i++) {
-        if(str.indexOf(alpha[i])===-1) {
-            flag = false
-            return flag
-        }
-    }
-    return flag
+// or my solution
+
+function changeAllOccurrencesOfFirstChar2(str){
+    return Array.from(str).map((chr,i) => {
+        if(chr === "r" && i!=0) return "$"
+        else return chr
+    }).join("")
 }
 
-console.log(all_alphabets2("The quick brown fox jumps over the lazy dog")) // true
-console.log(all_alphabets2("The quick brown fox jumps over the lazy cat")) // false
+console.log(changeAllOccurrencesOfFirstChar2("restart"))

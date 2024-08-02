@@ -98,3 +98,7 @@ Sample Data:
  * javascript-string
  * exercice20
  */
+
+/**
+ * Write a Python program to remove all consecutive duplicates of a given string.
+ */
