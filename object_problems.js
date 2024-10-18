@@ -22,6 +22,14 @@ Expected Output : Unique Values: {'S005', 'S002', 'S007', 'S001', 'S009'}
  */
 
 /**
+ *  python-dict4 - exercise 23
+ * 
+ * Write a Python program to combine values in a list of dictionaries.
+Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+Expected Output: Counter({'item1': 1150, 'item2': 300})
+ */
+
+/**
  * python-dict - exercise 27
  * 
  * Write a Python program to convert a list into a nested dictionary of keys.
@@ -39,6 +47,9 @@ Expected Output : Unique Values: {'S005', 'S002', 'S007', 'S001', 'S009'}
  * python-dict - exercise 38
  * 
  * Write a Python program to match key values in two dictionaries.
+ * 
+ * let x = {'key1': 1, 'key2': 3, 'key3': 2}
+let y = {'key1': 1, 'key2': 2}
  */
 
 /**

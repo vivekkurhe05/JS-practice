@@ -1,4 +1,6 @@
 /**
+ * python-regex - exercise55
+ * 
  * Write a Python program to convert a given string to snake case.
  * 
  * output
@@ -8,9 +10,9 @@
  */
 
 // my solution
-function snake_case(str) {
-    const re = /\B(?=[A-Z][a-z]+)/g
-    return str.replace(re,"-").toLowerCase().replace(/^\s+|\s+$/g, "").replace(/(?<=\.)\b(?=\w)|[_\s]/g, "-")
+function snake_case(str){
+    const re = /\B(?=[A-Z][a-z])/g
+    return str.replace(re, "-").toLowerCase().replace(/^\s+|\s+$/g, "").replace(/(?<=\.)\b(?=\w)|[_\s]/g, "-")
 }
 
 console.log(snake_case("JavaScript"));

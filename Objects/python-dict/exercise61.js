@@ -31,3 +31,16 @@ for(let i=0; i<arr.length; i++) {
     }
 }
 console.log(obj2)
+
+// or
+
+let obj3 = {'XX':10,'V': 10, 'VI': 10, 'VII': 40, 'VIII': 20, 'IX': 70, 'X': 80, 'XI': 40, 'XII': 20}
+let newObj = {}
+for(let key in obj3){
+    if(obj3[key] in newObj){
+        newObj[obj3[key]]++
+    }else{
+        newObj[obj3[key]]=1
+    }
+}
+console.log(newObj)

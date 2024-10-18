@@ -2,12 +2,16 @@
  * python-regex - exercise12
  * 
  * Write a Python program that matches a word containing 'z'.
+ * console.log(text_match("The quick brown fox jumps over the lazy dog.")); // true
+console.log(text_match("Python Exercises.")); // false
  */
 
 /**
  * python-regex - exercise13
  * 
  * Write a Python program that matches a word containing 'z', not at the start or end of the word.
+ * console.log(text_match("The quick brown fox jumps over the lazy dog.")); // true
+console.log(text_match("Python Exercises.")); // false
  */
 
 
@@ -32,6 +36,10 @@ Enter at 120 Kearny Street. The security desk can direct you to floor 16. Please
  * java-script
     gd-script
     btw...-what-*-do*-you-call-that-naming-style?-snake-case?
+
+    console.log(snake_case("JavaScript"));
+console.log(snake_case("GDScript"));
+console.log(snake_case("BTW...what *do* you call that naming style? snake_case? "));
  */
 
 
