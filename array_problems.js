@@ -85,3 +85,10 @@ Selected 3 random numbers of the above list:
 3X3 grid with numbers:
 [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
  */
+
+/**
+ * python-list exercise15
+ * 
+ * Write a Python program to shuffle and print a specified list.
+ * let color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+ */

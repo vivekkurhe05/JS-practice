@@ -73,3 +73,135 @@ Original list of dictionary:
 Remove id #FF0000 from the said list of dictionary:
 [{'id': '#800000', 'color': 'Maroon'}, {'id': '#FFFF00', 'color': 'Yellow'}, {'id': '#808000', 'color': 'Olive'}]
  */
+
+/**
+ * python-dict4 exercise 46
+ * 
+ * Write a Python program to create a dictionary grouping a sequence of key-value pairs into a dictionary of lists.
+Original list:
+[('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+Grouping a sequence of key-value pairs into a dictionary of lists:
+{'yellow': [1, 3], 'blue': [2, 4], 'red': [1]}
+ */
+
+/**
+ * python-dict4 exercise47
+ * 
+ * Write a Python program to split a given dictionary of lists into lists of dictionaries.
+Original dictionary of lists:
+{'Science': [88, 89, 62, 95], 'Language': [77, 78, 84, 80]}
+Split said dictionary of lists into list of dictionaries:
+[{'Science': 88, 'Language': 77}, {'Science': 89, 'Language': 78}, {'Science': 62, 'Language': 84}, {'Science': 95, 'Language': 80}]
+ */
+
+/**
+ * python-dict4 exercise48
+ * 
+ * Write a Python program to remove a specified dictionary from a given list.
+Original list of dictionary:
+[{'id': '#FF0000', 'color': 'Red'}, {'id': '#800000', 'color': 'Maroon'}, {'id': '#FFFF00', 'color': 'Yellow'}, {'id': '#808000', 'color': 'Olive'}]
+Remove id #FF0000 from the said list of dictionary:
+[{'id': '#800000', 'color': 'Maroon'}, {'id': '#FFFF00', 'color': 'Yellow'}, {'id': '#808000', 'color': 'Olive'}]
+ */
+
+/**
+ * python-dict4 exercise61
+ * 
+ * Write a Python program to count the frequency of a dictionary.
+Original Dictionary:
+{'V': 10, 'VI': 10, 'VII': 40, 'VIII': 20, 'IX': 70, 'X': 80, 'XI': 40, 'XII': 20}
+Count the frequency of the said dictionary:
+Counter({10: 2, 40: 2, 20: 2, 70: 1, 80: 1})
+*/
+
+/**
+ * python-dict4 exercise62
+ * 
+ * Write a Python program to extract values from a given dictionary and create a list of lists from those values.
+Original Dictionary:
+[{'student_id': 1, 'name': 'Jean Castro', 'class': 'V'}, {'student_id': 2, 'name': 'Lula Powell', 'class': 'V'}, {'student_id': 3, 'name': 'Brian Howell', 'class': 'VI'}, {'student_id': 4, 'name': 'Lynne Foster', 'class': 'VI'}, {'student_id': 5, 'name': 'Zachary Simon', 'class': 'VII'}]
+Extract values from the said dictionarie and create a list of lists using those values:
+[
+    [1, 'Jean Castro', 'V'], 
+    [2, 'Lula Powell', 'V'], 
+    [3, 'Brian Howell', 'VI'], 
+    [4, 'Lynne Foster', 'VI'], 
+    [5, 'Zachary Simon', 'VII']
+]
+[
+    [1, 'Jean Castro'], 
+    [2, 'Lula Powell'], 
+    [3, 'Brian Howell'], 
+    [4, 'Lynne Foster'], 
+    [5, 'Zachary Simon']
+]
+[
+    ['Jean Castro', 'V'], 
+    ['Lula Powell', 'V'], 
+    ['Brian Howell', 'VI'], 
+    ['Lynne Foster', 'VI'], 
+    ['Zachary Simon', 'VII']
+]
+ */
+
+/**
+ * 
+ * python-dict4 exercise63
+ * 
+ * Write a Python program to convert a given list of lists to a dictionary.
+Original list of lists:
+[
+    [1, 'Jean Castro', 'V'], 
+    [2, 'Lula Powell', 'V'], 
+    [3, 'Brian Howell', 'VI'], 
+    [4, 'Lynne Foster', 'VI'], 
+    [5, 'Zachary Simon', 'VII']
+]
+Convert the said list of lists to a dictionary:
+{
+    1: ['Jean Castro', 'V'], 
+    2: ['Lula Powell', 'V'], 
+    3: ['Brian Howell', 'VI'], 
+    4: ['Lynne Foster', 'VI'], 
+    5: ['Zachary Simon', 'VII']
+}
+ */
+
+/**
+ * python-dict4 exercise67
+ * 
+ * Write a Python program to invert a given dictionary with non-unique hashable values.
+ * 
+ let students = {
+    'Ora Mckinney': 8,
+    'Theodore Hollandl': 7,
+    'Mae Fleming': 7,
+    'Mathew Gilbert': 8,
+    'Ivan Little': 7,  
+}
+
+output:
+{
+  '7': [ 'Theodore Holland', 'Mae Fleming', 'Ivan Little' ],
+  '8': [ 'Ora Mckinney', 'Mathew Gilbert' ]
+}
+ */
+
+/**
+ * python-dict4 exercise68
+ * 
+ * Write a Python program to combine two or more dictionaries, creating a list of values for each key.
+Sample Output:
+Original dictionaries:
+{'w': 50, 'x': 100, 'y': 'Green', 'z': 400}
+{'x': 300, 'y': 'Red', 'z': 600}
+Combined dictionaries, creating a list of values for each key:
+{'w': [50], 'x': [100, 300], 'y': ['Green', 'Red'], 'z': [400, 600]}
+ */
+
+/**
+ * is-equal.js
+ * 
+ * Write a method that makes a shallow compare of two objects
+ * Expected Result: True if objects are identical, false if objects are different ({ a: 1, b: 1 }, { a: 1, b: 1 }) => true
+ */

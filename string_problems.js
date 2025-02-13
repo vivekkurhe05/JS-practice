@@ -21,6 +21,9 @@ the length of the longest one.
 Sample Output:
 Longest word: Exercises
 Length of the longest word: 9
+
+console.log(longest_word(["PHP","Exercises","Backend", "sdfjdsfdhshhfsh"]))
+
  */
 
 
@@ -101,4 +104,45 @@ Sample Data:
 
 /**
  * Write a Python program to remove all consecutive duplicates of a given string.
+ */
+
+/**
+ * javascript-string4 exercise6
+ * 
+ * Write a JavaScript function to hide email addresses to protect from unauthorized user.
+ * Test Data :
+ * console.log(protect_email("robin_singh@example.com"));
+ * "robin...@example.com"
+ */
+
+/**
+ * python-string4 exercise33
+ * 
+ * Write a Python program to print the following integers with zeros
+to the left of the specified width.
+ */
+
+/**
+ * python-string4 exercise34
+ * 
+ * Write a Python program to print the following integers with '*' to the right of the specified width.
+ */
+
+/**
+ * python-string exercise88
+ * Write a Python program to check whether a given string contains a capital letter,
+a lower case letter, a number and a minimum length.
+Sample Output:
+Input the string: W3resource
+['Valid string.']
+ */
+
+/**
+ * python-string exercise111
+ * 
+ * Write a Python program that takes a string and replaces all the characters with their respective numbers.
+Sample Data:
+("Python") -> "16 25 20 8 15 14"
+("Java") -> "10 1 22 1"
+("Python Tutorial") -> "16 25 20 8 15 14 20 21 20 15 18 9 1 12"
  */
