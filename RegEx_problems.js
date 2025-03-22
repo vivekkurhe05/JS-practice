@@ -69,3 +69,39 @@ console.log(snake_case("BTW...what *do* you call that naming style? snake_case? 
   * 
  * Write a Java program to check if a given string is a Mathematical Expression or not.
  */
+
+/**
+ * java-regex - exercise6
+ * 
+ * Write a Java program to check a word contains the character 'g' in a given string.
+ */
+
+/**
+ * java-regex - exercise17
+ * 
+ * Write a Java program to count the number of decimal places in a given number.
+ */
+
+/**
+ * java-regex5 - exercise26
+ * 
+ * Write a Java function to check whether a given value is hexcolor value or not.
+ * hexcolor is either 3 or 6 characters long
+ * hexcolor should start with #
+ * hexcolor contains either digits or alphabets or alphanumeric
+ * digits range from 0-9
+ * alphabets range from a-f or A-F
+ */
+
+/**
+ * java-regex5 - exercise27
+ * 
+ * Write a Java program to add a dash before and after every vowel in a given string.
+ * 
+ */
+
+/**
+ * java-regex5 - exercise29
+ * 
+ * Write a Java program to check if a given string is a Mathematical Expression or not.
+ */

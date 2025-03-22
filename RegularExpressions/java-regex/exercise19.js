@@ -15,3 +15,14 @@ function validate(str) {
 console.log(validate("The quick brown fox jumps over the lazy dog."));
 console.log(validate("Java Exercises."));
 console.log(validate("Java linkedlist."));
+
+// or
+
+function validate2(str) {
+    const re = /[pqr]/g;
+    return re.test(str) ? str.replace(re,"") : "Not found";
+}
+
+console.log(validate2("The quick brown fox jumps over the lazy dog."));
+console.log(validate2("Java Exercises."));
+console.log(validate2("Java linkedlist."));

@@ -9,7 +9,7 @@
 
 // my solution
 function validate (hexCode) {
-    const re = /^#[0-9a-fA-F]{3,6}$/g;
+    const re = /^#(([a-f]|[0-9]|[a-f0-9]){3}|([a-f]|[0-9]|[a-f0-9]){6})$/g;
     return re.test(hexCode)
 }
 
@@ -18,3 +18,4 @@ console.log(validate("#eaecff")); // true
 console.log(validate("#FF0000")); // true
 console.log(validate("#DD5C5C")); // true
 console.log(validate("#0000000")); // false
+console.log(validate("#abcd")); // false
