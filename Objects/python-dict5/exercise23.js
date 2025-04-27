@@ -12,6 +12,12 @@ const arr = [
 
 let obj = {};
 
-arr.map((obj) => {
-    
-})
+arr.forEach((el) => {
+    if(!(el.item in obj)) {
+        obj[el.item] = el.amount;
+    }else {
+        obj[el.item] += el.amount;
+    }
+});
+
+console.log(obj);
