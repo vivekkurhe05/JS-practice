@@ -2,7 +2,7 @@
  * Write a JavaScript function to check whether an object contains given property.
  */
 
-function hasKey(obj, prop) {
+function hasKey(obj, key) {
     return obj !=null && hasOwnProperty.call(obj, key);
 }
 
