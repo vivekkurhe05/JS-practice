@@ -3,22 +3,21 @@
  * The first row of the string is used as the title row.
  */
 
-// do this
+// w3resource sol
 function CSV_to_JSON(str, del=',') {
-    const obj = {};
-    let arr = [];
-    let headingIndex = str.indexOf('\n');
-    let heading = str.slice(0, headingIndex).split(del);
-    let values = str.slice(headingIndex+1).split('\n').map(el => el.split(del));
+    const titles = str.slice(0, str.indexOf('\n')).split(del);
 
-    heading.forEach((key,i) => {
-        if(!(key in obj)) {
-            obj[key] = values[0][i];
-        }
-        arr.push(obj);
-    });
+    return str.slice(str.indexOf('\n')+1).split('\n')
+    .map(el => {
+        const values = el.split(del);
+        return titles.reduce((acc, cur, i) => {
+            if(acc) {
+                acc[cur] = values[i]
+            }
+            return acc;
+        }, {})
+    })
     
-    return arr;
 }
 
 console.log(CSV_to_JSON('col1,col2\na,b\nc,d')); // [{'col1': 'a', 'col2': 'b'}, {'col1': 'c', 'col2': 'd'}];
