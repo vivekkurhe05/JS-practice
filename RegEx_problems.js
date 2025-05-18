@@ -105,3 +105,9 @@ console.log(snake_case("BTW...what *do* you call that naming style? snake_case? 
  * 
  * Write a Java program to check if a given string is a Mathematical Expression or not.
  */
+
+/**
+ * ES6-part1- basics - exercise12
+ * 
+ * Write a JavaScript program to remove non-printable ASCII characters from a given string.
+ */
