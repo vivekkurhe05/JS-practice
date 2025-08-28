@@ -3,7 +3,11 @@
  */
 
 function toKebabCase(str) {
-    
+    return str.replace(/[A-Z](?=[a-z])/g, (chr) => "-"+chr.toLowerCase())
+    .replace(/[\s\_\-]+/g,"-")
+    .replace(/^\-/g,"")
+    .replace(/(?<=[a-z])[A-Z]+/g, (chr) => "-"+chr.toLowerCase())
+    .replace(/\w/g, chr => chr.toLowerCase());
 }
 
 console.log(toKebabCase('camelCase'));
