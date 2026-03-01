@@ -11,5 +11,24 @@ function remove_all_consecutives(str) {
 
     return newstr
 }
+console.log(remove_all_consecutives("xxxxxyyyyyabcab"))
 
-console.log(remove_all_consecutives("xxxxxyyyyyx"))
+// or
+
+
+// my sol
+function remove_all_consecutives2(str) {
+
+    if(str.length === 0) return "";
+
+    let result = "";
+    for(let i=1;i<str.length;i++) {
+        if(str[i] !== str[i-1]) {
+            result+=str[i]
+        }
+    }
+
+    return result;
+}
+
+console.log(remove_all_consecutives2("xxxxxyyyyyabca")); // xyabca
