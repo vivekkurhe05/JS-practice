@@ -10,7 +10,8 @@ ABCD
  */
 
 function remove_unwanted_chars(str) {
-
+    const re = /[^A-Z]/gi;
+    return str.replace(re,"");
 }
 
 console.log(remove_unwanted_chars("Pyth*^on Exercis^es"))

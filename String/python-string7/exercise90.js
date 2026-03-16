@@ -8,7 +8,8 @@ Python Exercises Practice Solution
  */
 
 function remove_duplicate_words(str) {
-
+    const arr = str.split(" ");
+    return Array.from(new Set(arr)).join(" ");
 }
 
 console.log(remove_duplicate_words("Python Exercises Practice Solution Exercises"))
