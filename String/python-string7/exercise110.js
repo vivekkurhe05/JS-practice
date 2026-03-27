@@ -7,7 +7,8 @@ Sample Data:
  */
 
 function insert_space(str) {
- 
+    const re = /\B(?=[A-Z])/g;
+    return str.replace(re, " ");
 }
 
 console.log(insert_space("PythonExercises"))

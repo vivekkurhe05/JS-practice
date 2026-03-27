@@ -8,7 +8,7 @@ Sample Data:
  */
 
 function sort_alphabetically(str) {
-  
+    return str.split(" ").sort().join(" ");
 }
 
 console.log(sort_alphabetically("Red Green Black White Pink"))

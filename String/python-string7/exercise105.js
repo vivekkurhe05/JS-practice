@@ -7,7 +7,8 @@ Sample Data:
  */
 
 function display_name(email) {
-   
+   let name = email.split("@")[0];
+   return name.replace(/[.-]/g, "");
 }
 
 

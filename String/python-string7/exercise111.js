@@ -7,7 +7,12 @@ Sample Data:
  */
 
 function replace_by_num(str) {
- 
+    str=str.toLowerCase().replace(" ",'');
+    const chars = "abcdefghijklmnopqrstuvwxyz";
+
+    return Array.from(str).map((chr, i) => {
+        if(chars.indexOf(chr) !== -1) return chars.indexOf(chr)+1
+    }).join(" ");
 }
 
 console.log(replace_by_num("Python"));
