@@ -146,3 +146,133 @@ Sample Data:
 ("Java") -> "10 1 22 1"
 ("Python Tutorial") -> "16 25 20 8 15 14 20 21 20 15 18 9 1 12"
  */
+
+/**
+ * Write a Python program to count the number of characters (character frequency) in a string.
+Sample String : google.com'
+Expected Result : {'g': 2, 'o': 3, 'l': 1, 'e': 1, '.': 1, 'c': 1, 'm': 1}
+console.log(countCharacters('google.com'))
+ */
+
+/**
+ *
+Write a Python program to get a string from a given string where all occurrences
+of its first char have been changed to '$', except the first char itself.
+Sample String : 'restart'
+Expected Result : 'resta$t'
+console.log(changeAllOccurrencesOfFirstChar("restart"));
+ */
+
+/**
+ * Write a Python program to remove a newline in Python.
+ * let str1 = 'Python Exercises\n';
+ */
+
+/** 
+ * Write a Python program to print the following numbers up to 2 decimal places.
+ * console.log(upto_2_decimal_places(3.1415926))
+console.log(upto_2_decimal_places(12.9999))
+*/
+
+/**
+ * Write a Python program to print the following integers with zeros
+to the left of the specified width.
+console.log(pad_start(3))
+console.log(pad_start(123))
+ */
+
+/**
+ * Write a Python program to print the following integers with '*' to the right of the specified width.
+ * 
+ * console.log(pad_end(3))
+console.log(pad_end(123))
+ */
+
+/**
+ * Write a Python program to display a number with a comma separator.
+ * let x = 3000000
+let y = 30000000
+
+ */
+
+/**
+ * Write a Python program to format a number with a percentage.
+ * let x = 0.25
+let y = -0.25
+ */
+
+/**
+ * Write a Python program to check whether a string contains all letters of the alphabet.
+ * console.log(all_alphabets("The quick brown fox jumps over the lazy dog")) // true
+console.log(all_alphabets("The quick brown fox jumps over the lazy cat")) // false
+ */
+
+/**
+ * Write a Python program to count and display vowels in text.
+ * {e:4,o:4,u:1}
+ * console.log(count_and_display_vowels("welcome to w3resource.com"))
+ */
+
+/**
+ * Write a Python program to find the first non-repeating character in a given string.
+ * 
+ * console.log(first_non_repeating_character('abcdef')) // a
+console.log(first_non_repeating_character('abcabcdef')) // d
+console.log(first_non_repeating_character('aabbcc')) // undefined
+ */
+
+/**
+ * Write a Python program to find the first repeated character in a given string.
+ * console.log(first_repeating_character('abcdabcd'))
+console.log(first_repeating_character('abcd'))
+console.log(first_repeating_character('abcdee'))
+ */
+
+/**
+ * Write a Python program to find the first repeated character in a
+given string where the index of the first occurrence is smallest.
+console.log(first_repeated_char_smallest_index("abcabc"))
+console.log(first_repeated_char_smallest_index("abcb"))
+console.log(first_repeated_char_smallest_index("abcc"))
+console.log(first_repeated_char_smallest_index("abcxxy"))
+console.log(first_repeated_char_smallest_index("abc"))
+ */
+
+/**
+ * Write a Python program to remove leading zeros from an IP address.
+output:
+255.24.1.1
+127.0.0.1
+console.log(remove_zeros_from_ip("255.024.01.01"))
+console.log(remove_zeros_from_ip("127.0.0.01"))
+ */
+
+/**
+ * Write a Python program to remove all consecutive duplicates of a given string.
+ * console.log(remove_all_consecutives("xxxxxyyyyyabcab")) // xyabca
+ */
+
+/**
+ * Write a Python program to find the minimum window in a given string that will contain
+all the characters of another given string.
+Example 1
+Input : str1 = " PRWSOERIUSFK "
+str2 = " OSU "
+Output: Minimum window is "OERIUS
+console.log(minimum_window("PRWSOERIUSFK","OSU")) // OERIUS
+ */
+
+/**
+ * Write a Python program to replace each character of a word of length five and more with a hash character (#).
+Sample Output:
+Original string: Count the lowercase letters in the said list of words:
+Replace words (length five or more) with hash characters in the said string:
+##### the ######### ####### in the said list of ######
+Original string: Python - Remove punctuations from a string:
+Replace words (length five or more) with hash characters in the said string:
+###### - ###### ############ from a #######
+
+console.log(replace_with_hash("Count the lowercase letters in the said list of words:"))
+console.log(replace_with_hash("Python - Remove punctuations from a string:"))
+ */
+

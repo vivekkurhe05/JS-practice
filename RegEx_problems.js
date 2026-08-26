@@ -104,10 +104,37 @@ console.log(snake_case("BTW...what *do* you call that naming style? snake_case? 
  * java-regex5 - exercise29
  * 
  * Write a Java program to check if a given string is a Mathematical Expression or not.
+ * console.log(validate("10")); // true
+console.log(validate("10+20")); // true
+console.log(validate("10*20*30")); // true
+console.log(validate("-10*20--30")); // true
+console.log(validate("-10*20--2e4")); // true
+console.log(validate("100+")); // false
+console.log(validate("100+foo")); // false
+console.log(validate("10*+20*30")); // false
  */
 
 /**
  * ES6-part1- basics - exercise12
  * 
  * Write a JavaScript program to remove non-printable ASCII characters from a given string.
+ */
+
+/**
+ * java-regex6 - exercise22
+ * Write a Java program to validate a given phone number.
+ * 
+ * Following are valid phone number examples:
+“(123)4567890", "1234567890", "123-456-7890", "(123)456-7890",
+Following are invalid phone numbers:
+"(1234567890)","123)4567890", "12345678901", "(1)234567890", "(123)-4567890", "1", "12-3456-7890", "123-4567", "Hello world"
+
+Regex explanation:
+^\\(? - May start with an option "("
+(\\d{3}) - Followed by 3 digits
+\\)? - May have an optional ")"
+[- ]? - May have an optional "-" after the first 3 digits or after optional ) character
+(\\d{3}) - Followed by 3 digits.
+[- ]? - May have another optional "-" after numeric digits
+(\\d{4})$ - ends with four digits
  */
