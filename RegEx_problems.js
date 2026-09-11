@@ -138,3 +138,28 @@ Regex explanation:
 [- ]? - May have another optional "-" after numeric digits
 (\\d{4})$ - ends with four digits
  */
+
+/**
+ * Write a Python program to search a literals string in a string and also find the location within the original string 
+ * where the pattern occurs.
+
+Sample text : 'The quick brown fox jumps over the lazy dog.'
+Searched words : 'fox'
+ */
+
+/**
+ * Write a Python program to convert a date of yyyy-mm-dd format to dd-mm-yyyy format.
+ * console.log(change_date_format("2026-01-02"));
+ */
+
+/**
+ * Write a Python program to concatenate the consecutive numbers in a given string.
+ * 
+Original string:
+Enter at 1 20 Kearny Street. The security desk can direct you to floor 1 6. Please have your identification ready.
+After concatenating the consecutive numbers in the said string:
+Enter at 120 Kearny Street. The security desk can direct you to floor 16. Please have your identification ready.
+
+let str =
+  "Enter at 1 20 Kearny Street. The security desk can direct you to floor 1 6. Please have your identification ready.";
+ */
